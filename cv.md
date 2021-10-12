@@ -7,6 +7,8 @@ rss = "Curriculum vitae by Francesc Verdugo"
 
 # Curriculum vitae
 
+\toc
+
 ## Personal information
 
 - Surnames, name: Verdugo Rojano, Francesc
@@ -16,23 +18,39 @@ rss = "Curriculum vitae by Francesc Verdugo"
 - ORCID: [0000-0003-3667-443X](http://orcid.org/0000-0003-3667-443X)
 - Research ID: N-1674-2016
 
-## Current position
+### Current position
 
 - 2020-01-01 -- present: Assistant Research Professor at [CIMNE](https://www.cimne.com/).
 
-## Previous positions
+### Previous positions
 
 - 2018-01-01 -- 2019-12-31: Postdoc researcher at [CIMNE](https://www.cimne.com/).
 - 2016-01-01 -- 2017-12-31: Postdoc researcher at [UPC](https://www.upc.edu/).
 - 2013-12-01 -- 2015-11-30: Postdoc researcher at [TUM](https://www.tum.de). 
 - 2009-10-19 -- 2013-10-18: PhD candidate at [UPC](https://www.upc.edu/).
 
-## Academic degrees
+### Academic degrees
 
 - 2018: Habilitation for university assistant professor by [AQU](https://www.aqu.cat/).
 - 2015: Habilitation for university lecturer by [AQU](https://www.aqu.cat/).
 - 2013: PhD Civil Engineer by [UPC](https://www.upc.edu/).
-- 2009: Bsc Msc Civil Engineer by [UPC](https://www.upc.edu/)
+- 2009: Bsc Msc Civil Engineer by [UPC](https://www.upc.edu/).
+
+## Fellowships and awards
+
+### Competitive individual fellowships
+
+1. 2020: Severo Ochoa -- Postdoc fellowship. Spanish research foundation.
+1. 2018: Beatriu Pinós -- Postdoc fellowship (success rate ~15%). AGAUR, Generalitat de Catalunya.
+1. 2017: Juan de la Cierva Incorporación -- Postdoc fellowship (success rate ~10%). Secretaría de Estado de Investigación, Desarrollo e Innovacion.
+1. 2016: Postdoc UPC -- Postdoc fellowship. UPC.
+1. 2009: FPU-UPC -- PhD fellowship. UPC.
+
+### Awards
+
+1. 2017: Seal of Excellence to the project proposal *Simulation of additive manufacturing with innovative large-scale finite elements* submitted under the Horizon 2020’s Marie Skłodowska-Curie actions, call H2020-MSCA-IF-2016}
+1. 2014: ECCOMAS award for the best Ph.D theses of 2013 on computational methods in applied sciences and engineering.  European Community on Computational Methods in Applied Sciences -- ECCOMAS [(link)](http://www.eccomas.org/vpage/1/6/2013).
+1. 2014: SEMNI award to the best Ph.D thesis 2013 on numerical methods in engineering. Sociedad Española de Métodos Numéricos en Ingeniería -- SEMNI [(link)](http://www.cimne.com/semni/vpage/1/0/premios-y-distinciones).
 
 ## Publications
 
@@ -100,3 +118,30 @@ _Italics_ show the presenting author
 1. **_F. Verdugo_**, P. Díez  and F. Casadei, Natural Quantities of Interest in Linear Elastodynamics for Goal-Oriented Error Assessment and Adaptivity (**contributed session**), International Conference on Adaptive Modeling and Simulation (ADMOS 2011), Paris, France, June 6--8, 2011.
 1. _P. Díez_, N. Parés, L. M. Steffens, R. A. Rosales and **F. Verdugo**, Error estimation and goal-oriented adaptivity for wave problems and transient structural dynamics (**contributed session**), IV European Conference on Computational Mechanics: Solids, Structures and Coupled Problems in Engineering, Lisboa, Portugal, 2008.
 
+
+## Teaching and supervision experience
+
+### Taught courses
+
+1. 2016-17 (1st semester): Lecturer of the module *Structures and Strength of Materials* (4.5 ECTS). Bachelor's degree in Aerospace Systems Engineering. Escola d'Enginyeria de Telecomunicació i Aeroespacial de Castelldefels (EETAC), UPC.
+1. 2015-16 (2nd semester): Lecturer of the module *Structures and Strength of Materials* (4.5 ECTS). Bachelor's degree in Aerospace Systems Engineering. Escola d'Enginyeria de Telecomunicació i Aeroespacial de Castelldefels (EETAC), UPC.
+1. 2015-16 (1st semester): Lecturer of the module *Computational Solid and Fluid Dynamics* (5 ECTS). Engineering Science Degree. Munich School of Engineering (MSE), TUM.
+1. 2014-15 (1st semester): Lecturer of the module *Computational Solid and Fluid Dynamics* (5 ECTS). Engineering Science Degree. Munich School of Engineering (MSE), TUM.
+1. 2011-12 (2nd semester): Teaching assistant of the module *Numerical Modeling* (9 ECTS). Civil Engineering Degree. Escola Tècnica Superior d'Enginyers de Camins, Canals i Ports de Barcelona (ETSECCPB), UPC.
+1. 2010-11 (2nd semester): Teaching assistant of the module *Numerical Modeling* (9 ECTS). Civil Engineering Degree. Escola Tècnica Superior d'Enginyers de Camins, Canals i Ports de Barcelona (ETSECCPB), UPC.
+
+### Supervised PhD theses
+
+1. Ongoing PhD thesis at UPC (co-supervised with Prof. Santiago Badia). Student: P. Martorell. Topic: Leveraging CAD models in embedded finite element methods. Started at 2018-10-08.
+
+### Collaboration with other PhD students
+
+Even though I am not officially advising the following students, I am actively collaborating in the research of these other PhD thesis:
+
+1. Ongoing PhD thesis at Monash (supervised by Prof. Santiago Badia). Student: Hridya Dilip. Topic: Space-time embedded finite element methods.
+1. Ongoing PhD thesis at Monash (supervised by Prof. Santiago Badia). Student: Connor Mallon. Topic: Topology optimization leveraging neural networks.
+1. Ongoing PhD thesis at MIT (supervised by Prof Steven G. Johnson). Student: Wenji Yao. Topic: Topology optimization in photonics.
+
+### Other mentoring activities
+
+1. Mentor in the Google Summer of Code (GSoC) 2021. Student: Pau Riera Portillo. Project: [[Gridap] Visualizing PDE approximations in Julia with Gridap.jl and Makie.jl.](https://summerofcode.withgoogle.com/projects/#6231266174697472)
