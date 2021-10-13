@@ -11,6 +11,8 @@ rss = "Curriculum vitae by Francesc Verdugo"
 
 ## Personal information
 
+### Personal details
+
 - Surnames, name: Verdugo Rojano, Francesc
 - Year of birth: 1984
 - Citizenship: Spanish
@@ -34,7 +36,7 @@ rss = "Curriculum vitae by Francesc Verdugo"
 - 2018: Habilitation for university assistant professor by [AQU](https://www.aqu.cat/).
 - 2015: Habilitation for university lecturer by [AQU](https://www.aqu.cat/).
 - 2013: PhD Civil Engineer by [UPC](https://www.upc.edu/).
-- 2009: Bsc Msc Civil Engineer by [UPC](https://www.upc.edu/).
+- 2009: Bsc Msc Civil Engineer (ingeniero de caminos, canales y puertos) by [UPC](https://www.upc.edu/).
 
 ## Fellowships and awards
 
@@ -48,7 +50,7 @@ rss = "Curriculum vitae by Francesc Verdugo"
 
 ### Awards
 
-1. 2017: Seal of Excellence to the project proposal *Simulation of additive manufacturing with innovative large-scale finite elements* submitted under the Horizon 2020’s Marie Skłodowska-Curie actions, call H2020-MSCA-IF-2016}
+1. 2017: Seal of Excellence to the project proposal *Simulation of additive manufacturing with innovative large-scale finite elements* submitted under the Horizon 2020’s Marie Skłodowska-Curie actions, call H2020-MSCA-IF-2016.
 1. 2014: ECCOMAS award for the best Ph.D theses of 2013 on computational methods in applied sciences and engineering.  European Community on Computational Methods in Applied Sciences -- ECCOMAS [(link)](http://www.eccomas.org/vpage/1/6/2013).
 1. 2014: SEMNI award to the best Ph.D thesis 2013 on numerical methods in engineering. Sociedad Española de Métodos Numéricos en Ingeniería -- SEMNI [(link)](http://www.cimne.com/semni/vpage/1/0/premios-y-distinciones).
 
@@ -63,8 +65,8 @@ rss = "Curriculum vitae by Francesc Verdugo"
 
 #### Published or in press
 
-1. S. Badia, E. Neiva, F. Verdugo (2021). Linking ghost penalty and aggregated unfitted methods. *Computer Methods in Applied Mechanics and Engineering*. In press. [arXiv:2106.13728](https://arxiv.org/abs/2106.13728)
-1. L. Lu, R. Pestourie, W. Yao, Z. Wang, **F. Verdugo**, S.G. Johnson (2021). Physics-informed neural networks with hard constraints for inverse design. *SIAM Journal on Scientific Computing*. In press.[arXiv:2102.04626](https://arxiv.org/abs/2102.04626)
+1. S. Badia, E. Neiva, **F. Verdugo** (2021). Linking ghost penalty and aggregated unfitted methods. *Computer Methods in Applied Mechanics and Engineering*. In press. [arXiv:2106.13728](https://arxiv.org/abs/2106.13728)
+1. L. Lu, R. Pestourie, W. Yao, Z. Wang, **F. Verdugo**, S.G. Johnson (2021). Physics-informed neural networks with hard constraints for inverse design. *SIAM Journal on Scientific Computing*. In press. [arXiv:2102.04626](https://arxiv.org/abs/2102.04626)
 1. S. Badia, A.F. Martín, E. Neiva, and **F. Verdugo** (2021). The aggregated unfitted finite element method on parallel tree-based adaptive meshes. *SIAM Journal on Scientific Computing*, vol. 43, pp. C203--C234.  [DOI:10.1137/20M1344512](https://dx.doi.org/10.1137/20M1344512)  [arXiv:2006.05373](https://arxiv.org/abs/2006.05373)
 1. S. Badia, A.F. Martín, E. Neiva, and **F. Verdugo** (2020). A generic finite element framework on parallel tree-based adaptive meshes. *SIAM Journal on Scientific Computing*, vol. 42, pp. C436--C468.  [DOI:10.1137/20M1328786](https://dx.doi.org/10.1137/20M1328786) [arXiv:1907.03709](https://arxiv.org/abs/1907.03709)
 1. S. Badia and **F. Verdugo** (2020). Gridap: An extensible Finite Element toolbox in Julia *Journal of Open Source Software*, vol. 5(52), pp. 2520. [DOI:10.21105/joss.02520](https://dx.doi.org/10.21105/joss.02520)
@@ -118,7 +120,6 @@ _Italics_ show the presenting author
 1. **_F. Verdugo_**, P. Díez  and F. Casadei, Natural Quantities of Interest in Linear Elastodynamics for Goal-Oriented Error Assessment and Adaptivity (**contributed session**), International Conference on Adaptive Modeling and Simulation (ADMOS 2011), Paris, France, June 6--8, 2011.
 1. _P. Díez_, N. Parés, L. M. Steffens, R. A. Rosales and **F. Verdugo**, Error estimation and goal-oriented adaptivity for wave problems and transient structural dynamics (**contributed session**), IV European Conference on Computational Mechanics: Solids, Structures and Coupled Problems in Engineering, Lisboa, Portugal, 2008.
 
-
 ## Teaching and supervision experience
 
 ### Taught courses
@@ -145,3 +146,42 @@ Even though I am not officially advising the following students, I am actively c
 ### Other mentoring activities
 
 1. Mentor in the Google Summer of Code (GSoC) 2021. Student: Pau Riera Portillo. Project: [[Gridap] Visualizing PDE approximations in Julia with Gridap.jl and Makie.jl.](https://summerofcode.withgoogle.com/projects/#6231266174697472)
+
+## Participaiton in competitive RTD projects
+
+### Participation as co-PI
+
+1. 2015.09.01 -- 2016.08.31: PI: W.A. Wall, Junior Co-PI: **F. Verdugo**. *Efficient solvers for coupled problems in respiratory mechanics*. The Bavarian Competence Network for Technical and Scientific High Performance Computing -- KONWIHR (Germany). 50,000 €. Id: KONWIHR IV/I.
+
+### Participation as researcher
+
+1. 2019.01.01 -- 2021.12.31: PI: S. Badia. *SOFAST: A Stochastic Optimization Framework for Aircraft STructural design*. Ministerio de competitividad innovación y universidades (Spain). 95.590 €. Id: RTI2018-096898-B-I00.
+1. 2018.06.01 -- 2021.05.31: PI (CIMNE sub-project): R. Rossi. *ExaQUte: EXAscale Quantification of Uncertainties for Technology and Science Simulation*.  European Comission (H2020). 698.500 €. Id: 800898.
+1. 2016.04.01 -- 2019.10.01: PI (CIMNE sub-project): M. Chiumenti. *EMUSIC: Efficient Manufacturing for Aerospace Components Using Additive Manufacturing, Net Shape HIP and Investment Casting*. European Comission (H2020). 170.000€ (CIMNE sub-project). Id: 690725.
+1. 2016.11.01 -- 2018.04.30: PI: S. Badia. *NuWaSim: On a Nuclear Waste Deep Repository Simulator*. European Research Council (Proof of Concept Grant). 149,250.00 €. Id: 737439.
+1. 2008 -- 2020: PI: N. A. Adams. *Fundamental Technologies for the Development of Future Space-Transport-System Components under HighThermal and Mechanical Loads*. Deutsche Forschungsgemeinschaft -- DFG (Germany). Id: SFB/TRR 40.
+1. 2012.01.01 -- 2014.12.31: PI: A. Huerta. *Desarrollo y análisis del método PGD para procesos de conformado termoplástico*. Ministerio de Educación y Ciencia (Spain). 147,620€. Id: DPI2011-27778-C02-02.
+1. 2009.07.22 -- 2015.05.01: PI: A. Huerta. *Mètodes Numèrics en ciències aplicades i enginyeria*. Agència de Gestió d'Ajuts Universitaris i de Recerca -- AGAUR (Catalonia, Spain). 48.880 €. Id: 2009 SGR 875.
+
+## Organizing committees and boards
+
+### Scientific and technical committees
+
+1. Member of the Scientific committee of the IX International Conference on Coupled Problems in Science and Engineering -- Coupled 2021.
+1. Member of the Scientific committee of the ECCOMAS Young Investigators Conference 2021 -- YIC 2021.
+1. Member of the Scientific committee of the ECCOMAS Young Investigators Conference 2017 -- YIC 2017.
+
+### Reviewer in international scientific journals
+
+1. Reviewer of Journal of Computational and Applied Mathematics.
+1. Reviewer of International Journal for Numerical Methods in Engineering.
+1. Reviewer of Computer Methods in Applied Mechanics and Engineering.
+1. Reviewer of the International Journal of Computational Methods.
+
+### Organization of R&D activities
+
+1. Co-organizer of the mini-symposium *Advanced Discretization and Solution Techniques for Unfitted Finite Elements in Coupled Problems*, on the IX International Conference on Coupled Problems in Science and Engineering (online event), June 2021.
+1. Co-organizer of the mini-symposium *Unfitted discretization methods: From theory to multidisciplinary applications* on the Congress on Numerical Methods in Engineering (CMN2019), Gimaraes, Portugal, July 2019. 
+1. Co-organizer of the mini-symposium *Advanced Discretization and Solution Techniques for Unfitted Finite Elements in Coupled Problems*, on the VIII International Conference on Coupled Problems in Science and Engineering, Sitges, Spain, June 2019.
+1. Co-organizer of the mini-symposium *Iterative solvers and preconditioning techniques for Extended Discretization Methods* on the ECCOMAS conference on extended discretization methods on partial differential equations on complex and evolving domains, Umea, Sweden, 19 -- 21, June, 2017.
+1. Member of the Local Organizing Committee of the VI International Conference on Adaptive Modeling and Simulation (ADMOS 2013), Lisbon, Portugal, June 3 -- 5, 2013.
