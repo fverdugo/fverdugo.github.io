@@ -344,3 +344,9 @@ code {
     padding: 0;
     width: 25%;
 }
+
+.im-100 {text-align: center;}
+.im-100 img {
+    padding: 0;
+    width: 100%;
+}
