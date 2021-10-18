@@ -705,5 +705,16 @@ respect to the number of processors (left), and the parallel speed up
 
 
 
+[^verdugo_2012] F.~Verdugo and P. Díez. Computable bounds of functional outputs in linear visco-elastodynamics.  *Computer Methods in Applied Mechanics and Engineering*, 245–246: 313--330, 2012. \doi{10.1016/j.cma.2012.06.016}.
+
+[^casadei_2013] F. Casadei, P. Díez, and F. Verdugo. An algorithm for mesh refinement and un-refinement in fast transient dynamics.  *International Journal of Computational Methods*, 10(04): 1350018, 2013.  \doi{10.1142/S0219876213500187}.
+
+[^verdugo_2014a] F. Verdugo, N. Parés, and P. Díez.  Goal-oriented space-time adaptivity for transient dynamics using a modal description of the adjoint solution. *Comput. Mech.*, 54(2): 331--352, 2014. \doi{10.1007/s00466-014-0988-2}.
+
+[^verdugo_2013] F. Verdugo, N. Parés, and P. Díez. Modal-based goal-oriented error assessment for timeline-dependent quantities in transient dynamics. *Int. J. Numer. Meth. Engng.*, 95(8): 685--720, 2013. \doi{10.1002/nme.4538}.
+
+[^verdugo_error_2014] F. Verdugo, N. Parés, and P. Díez. Error Assessment in Structural Transient Dynamics.  *Archives of Computational Methods in Engineering*, 21(1): 59--90, 2014.  \doi{10.1007/s11831-014-9096-x}.
+
+[^becker_2001] R. Becker and R. Rannacher.  An optimal control approach to a posteriori error estimation in finite element methods.  *Acta Numerica*, 10: 1--102, 2001. \doi{10.1017/S0962492901000010}.
 
 
