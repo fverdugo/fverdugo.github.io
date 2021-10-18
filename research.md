@@ -257,7 +257,7 @@ capability, robustness to cut location and parallel efficiency, on
 classical Poisson hp-adaptivity benchmarks. This work opens the path to
 functional and geometrical error-driven dynamic mesh adaptation with the
 AgFEM method in large-scale realistic scenarios. A research paper
-detailing this work is published in [^badia_2020a]).
+detailing this work is published in [^badia_2021]).
 
 ###### Embedded finite element methods for 3D printing simulations
 
@@ -348,7 +348,7 @@ advances in compiler technology like type inference and just-in-time
 compilation. As a result, the same language can be used both for the
 back-end and the front-end, thus eliminating the two-language problem.
 Based on this novel paradigm, I have started the Gridap.jl project
-[^badia_2020b], a new generation, open-source, FE framework completely
+[^badia_2020], a new generation, open-source, FE framework completely
 written in the Julia programming language. Gridap.jl allows users to
 write FE applications in a notation almost one-to-one to the
 mathematical notation used to define the PDE weak form. For instance,
@@ -398,7 +398,7 @@ The first immediate result in this research line is the initial release
 of the project, whose source code is freely available at [github](https://github.com/gridap/Gridap.jl)
 under a MIT software license. In
 addition, a related article has been published in the "Journal of Open
-Scientific Software" (see reference [^badia_2020b]). Gridap.jl is
+Scientific Software" (see reference [^badia_2020]). Gridap.jl is
 already a fully functional general-purpose FE library ready to solve
 linear, non-linear, steady-state, and time-dependent PDEs. It already
 provides different types of conforming FE methods like nodal Lagrangian
@@ -462,29 +462,248 @@ collaborators that use the library in several contexts, in order to
 increase my changes of publishing more research papers and to find
 relevant topics for preparing project proposals.
 
-### References
+## Post-doctoral research at TUM (2013-2015)
 
-[^cottrell_2009] J.A. Cottrell, T.J.R. Hughes, and Y.Bazilevs. \emph{Isogeometric analysis: toward integration of CAD and FEA}. Wiley, 2009. \doi{10.1002/9780470749081.ch7}.
+In this post-doc stay, I have developed parallel AMG solvers for the
+solution of large systems of linear algebraic equations associated with
+the FE discretization of complex multi-physics problems. The main goal
+of this research was to provide a general framework able to be applied
+to several problem types. In particular, this work was applied to
+fluid-structure interaction (FSI), thermo-mechanical coupling, and human
+respiratory mechanics among others.
 
-[^burman_2015] E. Burman, S. Claus, P. Hansbo, M.G. Larson, and A. Massing. CutFEM: Discretizing Geometry and Partial Differential Equations. \emph{International Journal for Numerical Methods in Engineering}, 104(7): 472--501, 2015. \doi{10.1002/nme.4823}.
+### General framework for the solution of coupled problems with monolithic schemes
 
-[^briggs_2000] W.L. Briggs, V.E. Henson, and S.F. McCormick. \emph{A Multigrid Tutorial, Second Edition}. Society for Industrial and Applied Mathematics, 2000. \doi{10.1137/1.9780898719505}.
+The numerical simulation of coupled problems via discretization
+techniques such as the FE method requires special solution strategies
+for solving the coupling between the underlying physical fields. The
+so-called partitioned methods [^felippa_2001] are often the preferred
+choice in industrial applications because they allow to reuse existing
+(black-box) solvers for the individual fields. However, this approach is
+unstable for many challenging strongly coupled problems [^forster_2007]
+and, therefore, another family of methods called monolithic are required
+in a variety of complex settings. It has also been shown that monolithic
+schemes are often preferable in terms of efficiency as compared to
+partitioned ones. For that reason, this approach has been the preferred
+option for solving many strongly coupled problems in the literature.
+However, the price to be paid for the extra robustness of monolithic
+methods is a more challenging system of linear equations. The system
+matrix is a big sparse matrix with a special block structure
+representing each of the underlying physical fields and frequently has a
+very bad condition number. In real-world applications, iterative methods
+such as GMRES are used to attack this linear system, which requires
+efficient preconditioners for addressing the bad conditioning of the
+problem. Selecting a suitable preconditioner is the key point in the
+solution process.
 
-[^toselli_2005] A. Toselli and O. B. Widlund. \emph{{Domain Decomposition Methods — Algorithms and Theory}}, volume 34 of \emph{Springer Series in Computational Mathematics}. Springer Berlin Heidelberg, Berlin, Heidelberg, 2005. \doi{10.1007/b137868}.
+The standard approach to design preconditioners for coupled problems is
+to use approximated block inverses in order to untangle the coupling
+between the physical fields, and then, to use efficient AMG solvers for
+the resulting uncoupled problems. The drawback of these methods is that
+the coupling is resolved only at the finest grid level. Thus, using
+efficient AMG solvers for the underlying problems does not necessarily
+imply a good treatment of the coupling and a fast global solution. This
+drawback is overcome by Gee et al. [^gee_2011], who propose an enhanced
+block preconditioner (referred to as monolithic AMG) for FSI
+applications, which enforces the coupling at all grid levels, and often
+results in a better solver performance. Monolithic AMG preconditioners
+are a promising approach for other coupled problems as well but, this
+strategy was only applied to FSI. In order to allow the usage of this
+enhanced AMG methods for a wide range of problem types, I have developed
+an general computational framework based on monolithic AMG techniques.
+For comparison purposes, conventional AMG solvers were also included.
+The method was implemented in the high performance multi-physics code
+BACI and it was published in a Q1 journal (see reference
+[^verdugo_2016]). This framework has been used at TUM since then, and it
+has been considered by several papers in top international journals
+(see, e.g., [^kremheller_2018][^fang_2018]), with a wide range of
+applications including simulation of vascular tumor growth and
+simulations of lithium ion cells.
 
-[^badia_2016] S. Badia, A.F. Martín, and J. Principe.  Multilevel Balancing Domain Decomposition at Extreme Scales. \emph{SIAM Journal on Scientific Computing}, 38(1): C22--C52, 2016. \doi{10.1137/15M1013511}.
+### Solvers for the thermo-mechanical coupling in rocket nozzles
 
-[^badia_2017] S. Badia and F. Verdugo. Robust and scalable domain decomposition solvers for unfitted finite element methods. \emph{Journal of Computational and Applied Mathematics},
-  344: 740--759, 2018. \doi{10.1016/j.cam.2017.09.034}.
+In the framework of the German research project "Fundamental
+Technologies for the Development of Future Space-Transport-System
+Components under High Thermal and Mechanical Loads", I have applied the
+general linear solver framework to the simulation of the
+thermo-mechanical coupling in rocket nozzles. I exemplary show here the
+performance of the developed preconditioners. The nozzle geometry (see
+Figures 7 and 8) and other problem parameters are
+inspired by the "Vulcain" rocket engine installed in the Ariane space
+launcher, see [^verdugo_2016] for further details.
 
-[^badia_2018b] S. Badia, A.F. Martín, and F. Verdugo. Mixed Aggregated Finite Element Methods for the Unfitted Discretization of the Stokes Problem. \emph{SIAM Journal on Scientific Computing}, 40(6): B1541--B1576, 2018. \doi{10.1137/18M1185624}.
+@@im-100
+![](/assets/fig12.png)
 
-[^badia_2018a] S. Badia, F. Verdugo, and A.F. Martín. The aggregated unfitted finite element method for elliptic problems.  \emph{Computer Methods in Applied Mechanics and Engineering}, 336: 533--553, 2018. \doi{10.1016/j.cma.2018.03.022}.
+*Figure 7: Rocket nozzle example: Full geometry of the nozzle (left),
+computational domain including one cooling channel (center), and generic
+cross section of the computational domain with the applied
+thermo-mechanical loads (right)*
+@@
 
-[^verdugo_2019] F. Verdugo, A.F. Martín, and S. Badia.  Distributed-memory parallelization of the aggregated unfitted finite element method. \emph{Computer Methods in Applied Mechanics and Engineering}, 357, 2019. \doi{10.1016/j.cma.2019.112583}.
+@@im-100
+![](/assets/fig13.png)
 
-[^badia_2019a] S. Badia, A.F. Martín, E. Neiva, and F. Verdugo.  A generic finite element framework on parallel tree-based adaptive meshes.  \emph{SIAM Journal on Scientific Computing}, 42(6): C436--C468, 2020. \doi{10.1137/20M1328786}.
+*Figure 8: Rocket nozzle example: Deformation of the nozzle (left), temperature
+distribution (center) and original and deformed longitudinal section
+(right). The results are given at time $t=1$ s and the deformation is
+magnified 20 times.*
+@@
 
-[^badia_2020a] S. Badia, A.F. Martín, E. Neiva, and F. Verdugo. The aggregated unfitted finite element method on parallel tree-based adaptive meshes. \emph{Arxiv preprints}, 2020.
+After the usual space and time discretization, the simulation results
+into a non-linear problem to be solved at each time step, which is
+handled with a monolithic Newton scheme. At each Newton iteration, the
+associated monolithic linear system of equations is solved with a GMRES
+method preconditioned with four different solvers available in our
+computational framework. The first method, namely BGS(AMG), considers an
+outer block Gauss-Seidel (BGS) scheme for uncoupling the fields and then
+independent AMG solvers are used to handle the thermal and mechanical
+problems separately. The second method, namely SIMPLE(AMG), is a similar
+method that considers an idea based on the SIMPLE method [^elman_2008]
+for uncoupling the fields instead of BGS. The third method, namely
+AMG(BGS), is an extension of the monolithic AMG solver to a generic
+coupled problem. Finally, the fourth method, namely BGS(DD), is an outer
+BGS for uncoupling the fields and then standard single-level additive
+Schwartz preconditioners are used to attack the uncoupled problems. The
+fourth method is one of the most simple parallel preconditioners that
+can be considered in such a problem, and therefore, it is considered
+here as a reference. All this solvers could be built easily by means of
+parameter lists using the general preconditioning framework.
 
-[^badia_2020b] S. Badia and F. Verdugo. Gridap: An extensible Finite Element toolbox in Julia. \emph{Journal of Open Source Software}, 5(52), 2020.  \doi{10.21105/joss.02520}.
+@@im-100
+![](/assets/fig14.png)
+
+*Figure 9: Rocket nozzle example: Results of the weak scalability study. The CPU
+times include the setup costs of the
+preconditioner.*
+@@
+
+The performance of the preconditioners is studied with a weak
+scalability test, see Figure 9. In this experiment, the ratio
+between processors and DOFs is kept constant with a value about 12500
+DOF/processor. The multi-grid methods AMG(BGS), BGS(AMG) and SIMPLE(AMG)
+have a very good scalability as the iteration count and CPU time of the
+linear solver increase only mildly with the problem size. On the other
+hand, the single-level method BGS(DD) is not scalable since the solver
+time strongly grows as the problem size increases. The performance of
+the single-level method BGS(DD) is particularly poor in this complex
+example which demonstrates that multi-grid preconditioners such as
+AMG(BGS), BGS(AMG) and SIMPLE(AMG) are required in this challenging
+setting. In conclusion, the AMG solvers implemented in our generic
+computational framework were able to solve this complex example
+efficiently.
+
+### Efficient solvers for respiratory mechanics
+
+Another application of the general linear solver framework has been the
+simulation of human respiratory mechanics. In recent years, advances
+have been made towards more protective ventilation strategies
+[^tobin_2001] trying to minimize negative side effects of the treatment,
+but it is still not fully clear what is the best ventilation strategy
+for a specific patient. Advanced modeling and simulation offer the
+possibility of predicting the mechanical response of the respiratory
+system under different ventilation scenarios, and give an opportunity to
+design better patient-tailored treatments. However, simulating the human
+lung poses several computational challenges including large and multiply
+coupled systems of linear equations. Thus, the underlying motivation of
+this work is to enable the efficient simulation of virtual lung models
+on high-performance computing platforms in order to assess mechanical
+ventilation strategies and contributing to design more protective
+patient-specific ventilation treatments.
+
+@@im-100
+![](/assets/fig15.png)
+
+*Figure 10: Patient-specific lung example: Numerical solution of the lung model
+consisting of the structural displacement (left), fluid pressure
+(center) and fluid velocity (right) at time $t=0.75$
+s.*
+@@
+
+The system of linear equations to be solved in this application is
+essentially the monolithic system arising in FSI extended by additional
+algebraic constraints. The introduction of these constraints leads to a
+saddle point problem that cannot be solved with usual FSI
+preconditioners available in the literature. The key ingredient in this
+work is to use the idea of the semi-implicit method for pressure-linked
+equations (SIMPLE) for getting rid of the saddle point structure,
+resulting in a standard FSI problem that can be treated with available
+techniques. Even though the lung model is a complex multi-physics
+problem (see Figure 10), the numerical examples show that the
+resulting preconditioners approaches the optimal performance (see Figure 11).
+Moreover, the preconditioners are
+robust enough to deal with physiologically relevant simulations
+involving complex real-world patient-specific lung geometries. The same
+approach is applicable to other challenging biomedical applications
+where coupling between flow and tissue deformation is modeled with
+additional algebraic constraints. This work has lead to 1 paper in a Q1
+journal (see reference [^verdugo_2016b]). In the framework of this
+research, I have been junior co-PI in the Bavarian regional project
+"Efficient solvers for coupled problems in respiratory mechanics".
+
+@@im-100
+![](/assets/fig16.png)
+
+*Figure 11: Patient-specific lung example: Results of the strong scalability test.
+The figure shows the dependence of the linear solver iterations with
+respect to the number of processors (left), and the parallel speed up
+(right).*
+@@
+
+## References
+
+[^badia_2016] S. Badia, A.F. Martín, and J. Principe.  Multilevel Balancing Domain Decomposition at Extreme Scales. *SIAM Journal on Scientific Computing*, 38(1): C22--C52, 2016. \doi{10.1137/15M1013511}.
+
+[^badia_2017] S. Badia and F. Verdugo. Robust and scalable domain decomposition solvers for unfitted finite element methods. *Journal of Computational and Applied Mathematics*, 344: 740--759, 2018. \doi{10.1016/j.cam.2017.09.034}.
+
+[^badia_2018a] S. Badia, F. Verdugo, and A.F. Martín. The aggregated unfitted finite element method for elliptic problems.  *Computer Methods in Applied Mechanics and Engineering*, 336: 533--553, 2018. \doi{10.1016/j.cma.2018.03.022}.
+
+[^badia_2018b] S. Badia, A.F. Martín, and F. Verdugo. Mixed Aggregated Finite Element Methods for the Unfitted Discretization of the Stokes Problem. *SIAM Journal on Scientific Computing*, 40(6): B1541--B1576, 2018. \doi{10.1137/18M1185624}.
+
+[^badia_2019a] S. Badia, A.F. Martín, E. Neiva, and F. Verdugo.  A generic finite element framework on parallel tree-based adaptive meshes.  *SIAM Journal on Scientific Computing*, 42(6): C436--C468, 2020. \doi{10.1137/20M1328786}.
+
+[^badia_2020] S. Badia and F. Verdugo. Gridap: An extensible Finite Element toolbox in Julia. *Journal of Open Source Software*, 5(52), 2020.  \doi{10.21105/joss.02520}.
+
+[^badia_2021] S. Badia, A.F. Martín, E. Neiva, and F. Verdugo. The aggregated unfitted finite element method on parallel tree-based adaptive meshes. *SIAM Journal on Scientific Computing*,  43: C203--C234, 2021. \doi{10.1137/20M1344512}.
+
+[^briggs_2000] W.L. Briggs, V.E. Henson, and S.F. McCormick. *A Multigrid Tutorial, Second Edition*. Society for Industrial and Applied Mathematics, 2000. \doi{10.1137/1.9780898719505}.
+
+[^burman_2015] E. Burman, S. Claus, P. Hansbo, M.G. Larson, and A. Massing. CutFEM: Discretizing Geometry and Partial Differential Equations. *International Journal for Numerical Methods in Engineering*, 104(7): 472--501, 2015. \doi{10.1002/nme.4823}.
+
+[^cottrell_2009] J.A. Cottrell, T.J.R. Hughes, and Y.Bazilevs. *Isogeometric analysis: toward integration of CAD and FEA*. Wiley, 2009. \doi{10.1002/9780470749081.ch7}.
+
+[^elman_2008] H. Elman, V.E. Howle, J. Shadid, R. Shuttleworth, and R. Tuminaro. A taxonomy and comparison of parallel block multi-level preconditioners for the incompressible Navier-Stokes equations. *Journal of Computational Physics*, 227(3): 1790--1808, 2008.  \doi{10.1016/j.jcp.2007.09.026}.
+
+[^fang_2018] R. Fang, P. Farah, A. Popp, and W.A. Wall. A monolithic, mortar-based interface coupling and solution scheme for finite element simulations of lithium-ion cells. *International Journal for Numerical Methods in Engineering*, 114(13): 1411--1437, 2018. \doi{10.1002/nme.5792}.
+
+[^felippa_2001] C.A. Felippa, K.C. Park, and C. Farhat. Partitioned analysis of coupled mechanical systems.  *Computer Methods in Applied Mechanics and Engineering*, 190(24-25): 3247--3270, 2001. \doi{10.1016/S0045-7825(00)00391-1}.
+
+[^forster_2007] C. Förster, W.A. Wall, and E. Ramm. Artificial added mass instabilities in sequential staggered coupling of nonlinear structures and incompressible viscous flows.  *Computer Methods in Applied Mechanics and Engineering*, 196(7): 1278--1293, 2007. \doi{10.1016/j.cma.2006.09.002}.
+
+[^gee_2011] M.W. Gee, U. Küttler, and W.A. Wall.  Truly monolithic algebraic multigrid for fluid-structure interaction.  *International Journal for Numerical Methods in Engineering*, 85(8): 987--1016, 2011. \doi{10.1002/nme.3001}.
+
+[^kremheller_2018] J. Kremheller, A.T. Vuong, L. Yoshihara, W.A. Wall, and B.A. Schrefler.  A monolithic multiphase porous medium framework for (a-)vascular tumor growth. *Computer Methods in Applied Mechanics and Engineering*, 340: 657--683, 2018.  \doi{10.1016/j.cma.2018.06.009}.
+
+[^tobin_2001] T. Martin.  Advances in mechanical ventilation. *The New England Journal of Medicine*, 344(26): 1986--1996, 2001. \doi{10.1056/NEJM200106283442606}.
+
+[^toselli_2005] A. Toselli and O. B. Widlund. *Domain Decomposition Methods — Algorithms and Theory*, volume 34 of *Springer Series in Computational Mathematics*. Springer Berlin Heidelberg, Berlin, Heidelberg, 2005. \doi{10.1007/b137868}.
+
+[^verdugo_2016] F. Verdugo and W.A. Wall. Unified computational framework for the efficient solution of n-field coupled problems with monolithic schemes. *Computer Methods in Applied Mechanics and Engineering*, 310: 335--366, 2016.  \doi{10.1016/j.cma.2016.07.016}.
+
+[^verdugo_2016b] F. Verdugo, C.J. Roth, L. Yoshihara, and W.A. Wall. Efficient solvers for coupled models in respiratory mechanics. *International Journal for Numerical Methods in Biomedical Engineering*, 2016. \doi{10.1002/cnm.2795}.
+
+[^verdugo_2019] F. Verdugo, A.F. Martín, and S. Badia.  Distributed-memory parallelization of the aggregated unfitted finite element method. *Computer Methods in Applied Mechanics and Engineering*, 357, 2019. \doi{10.1016/j.cma.2019.112583}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
