@@ -22,21 +22,21 @@ rss = "Curriculum vitae by Francesc Verdugo"
 
 ### Current position
 
-- 2020-01-01 -- present: Assistant Research Professor at [CIMNE](https://www.cimne.com/).
+- 2020-01-01 -- present: Assistant Research Professor at [CIMNE](https://www.cimne.com/). ([See research](/research/#post-doctoral_research_at_cimne_2016-present))
 
 ### Previous positions
 
-- 2018-01-01 -- 2019-12-31: Postdoc researcher at [CIMNE](https://www.cimne.com/).
-- 2016-01-01 -- 2017-12-31: Postdoc researcher at [UPC](https://www.upc.edu/).
-- 2013-12-01 -- 2015-11-30: Postdoc researcher at [TUM](https://www.tum.de). 
-- 2009-10-19 -- 2013-10-18: PhD candidate at [UPC](https://www.upc.edu/).
+- 2018-01-01 -- 2019-12-31: Postdoc researcher at [CIMNE](https://www.cimne.com/). ([See research](/research/#post-doctoral_research_at_cimne_2016-present))
+- 2016-01-01 -- 2017-12-31: Postdoc researcher at [UPC](https://www.upc.edu/). ([See research](/research/#post-doctoral_research_at_cimne_2016-present))
+- 2013-12-01 -- 2015-11-30: Postdoc researcher at [TUM](https://www.tum.de).  ([See research](/research/#post-doctoral_research_at_tum_2013-2015))
+- 2009-10-19 -- 2013-10-18: PhD candidate at [UPC](https://www.upc.edu/). ([See research](/research/#early-stage_research_at_upc_2009-2013))
 
 ### Academic degrees
 
 - 2018: Habilitation for university assistant professor by [AQU](https://www.aqu.cat/).
 - 2015: Habilitation for university lecturer by [AQU](https://www.aqu.cat/).
-- 2013: PhD Civil Engineer by [UPC](https://www.upc.edu/).
-- 2009: Bsc Msc Civil Engineer (ingeniero de caminos, canales y puertos) by [UPC](https://www.upc.edu/).
+- 2013: PhD Civil Engineer by [UPC](https://www.upc.edu/). Grade: excellent *cum laude* (maximum grade). ([See PhD thesis](https://upcommons.upc.edu/handle/2117/95642))
+- 2009: Bsc Msc Civil Engineer (ingeniero de caminos, canales y puertos) by [UPC](https://www.upc.edu/). ([See MSc thesis](https://upcommons.upc.edu/handle/2099.1/8679))
 
 ## Fellowships and awards
 
@@ -79,8 +79,8 @@ rss = "Curriculum vitae by Francesc Verdugo"
 1. **F. Verdugo**, N. Parés and P. Díez (2014). Error assessment in structural transient dynamics. *Archives of Computational Methods in Engineering*, vol. 21, pp. 59--90. [DOI:10.1007/s11831-014-9096-x](https://dx.doi.org/10.1007/s11831-014-9096-x)
 1.  **F. Verdugo**, N. Parés and P. Díez  (2014). Goal-oriented space-time adaptivity for transient dynamics using a modal description of the adjoint solution. *Computational Mechanics*, vol. 54, pp. 331--352. [DOI:10.1007/s00466-014-0988-2](https://dx.doi.org/10.1007/s00466-014-0988-2)
 1. **F. Verdugo**, N. Parés and P. Díez (2013). Modal based goal-oriented error assessment for timeline-dependent quantities in transient dynamics. *International Journal for Numerical Methods in Engineering*, vol. 95, pp. 685--720.   [DOI:10.1002/nme.4538](https://dx.doi.org/10.1002/nme.4538)
-1. F. Casadei, P. Díez and **F. Verdugo** (2013). An algorithm for mesh refinement and un-refinement in fast transient dynamics. *International Journal of Computational Methods*, vol. 10, pp. 1--31. [DOI:10.1142/S0219876213500187](https://dx.doi.org/10.1142/S0219876213500187)}
-1. **F. Verdugo** and P. Díez (2012). Computable bounds of functional outputs in linear visco-elastodynamics. *Computer Methods in Applied Mechanics and Engineering*, vol. 245-246, pp. 313--330. [DOI:10.1016/j.cma.2012.06.016](https://dx.doi.org/10.1016/j.cma.2012.06.016)}
+1. F. Casadei, P. Díez and **F. Verdugo** (2013). An algorithm for mesh refinement and un-refinement in fast transient dynamics. *International Journal of Computational Methods*, vol. 10, pp. 1--31. [DOI:10.1142/S0219876213500187](https://dx.doi.org/10.1142/S0219876213500187)
+1. **F. Verdugo** and P. Díez (2012). Computable bounds of functional outputs in linear visco-elastodynamics. *Computer Methods in Applied Mechanics and Engineering*, vol. 245-246, pp. 313--330. [DOI:10.1016/j.cma.2012.06.016](https://dx.doi.org/10.1016/j.cma.2012.06.016)
 
 ### Book chapters
 
@@ -177,6 +177,7 @@ Even though I am not officially advising the following students, I am actively c
 1. Reviewer of International Journal for Numerical Methods in Engineering.
 1. Reviewer of Computer Methods in Applied Mechanics and Engineering.
 1. Reviewer of the International Journal of Computational Methods.
+1. Reviewer of the The Journal of Open Source Software.
 
 ### Organization of R&D activities
 

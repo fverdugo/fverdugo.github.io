@@ -773,19 +773,21 @@ estimation of the numerical error is achieved.*
 
 ## References
 
+@@bibrefs
+
 [^badia_2016] S. Badia, A.F. Martín, and J. Principe.  Multilevel Balancing Domain Decomposition at Extreme Scales. *SIAM Journal on Scientific Computing*, 38(1): C22--C52, 2016. \doi{10.1137/15M1013511}.
 
-[^badia_2017] S. Badia and F. Verdugo. Robust and scalable domain decomposition solvers for unfitted finite element methods. *Journal of Computational and Applied Mathematics*, 344: 740--759, 2018. \doi{10.1016/j.cam.2017.09.034}.
+[^badia_2017] S. Badia and **F. Verdugo**. Robust and scalable domain decomposition solvers for unfitted finite element methods. *Journal of Computational and Applied Mathematics*, 344: 740--759, 2018. \doi{10.1016/j.cam.2017.09.034}.
 
-[^badia_2018a] S. Badia, F. Verdugo, and A.F. Martín. The aggregated unfitted finite element method for elliptic problems.  *Computer Methods in Applied Mechanics and Engineering*, 336: 533--553, 2018. \doi{10.1016/j.cma.2018.03.022}.
+[^badia_2018a] S. Badia, **F. Verdugo**, and A.F. Martín. The aggregated unfitted finite element method for elliptic problems.  *Computer Methods in Applied Mechanics and Engineering*, 336: 533--553, 2018. \doi{10.1016/j.cma.2018.03.022}.
 
-[^badia_2018b] S. Badia, A.F. Martín, and F. Verdugo. Mixed Aggregated Finite Element Methods for the Unfitted Discretization of the Stokes Problem. *SIAM Journal on Scientific Computing*, 40(6): B1541--B1576, 2018. \doi{10.1137/18M1185624}.
+[^badia_2018b] S. Badia, A.F. Martín, and **F. Verdugo**. Mixed Aggregated Finite Element Methods for the Unfitted Discretization of the Stokes Problem. *SIAM Journal on Scientific Computing*, 40(6): B1541--B1576, 2018. \doi{10.1137/18M1185624}.
 
-[^badia_2019a] S. Badia, A.F. Martín, E. Neiva, and F. Verdugo.  A generic finite element framework on parallel tree-based adaptive meshes.  *SIAM Journal on Scientific Computing*, 42(6): C436--C468, 2020. \doi{10.1137/20M1328786}.
+[^badia_2019a] S. Badia, A.F. Martín, E. Neiva, and **F. Verdugo**.  A generic finite element framework on parallel tree-based adaptive meshes.  *SIAM Journal on Scientific Computing*, 42(6): C436--C468, 2020. \doi{10.1137/20M1328786}.
 
-[^badia_2020] S. Badia and F. Verdugo. Gridap: An extensible Finite Element toolbox in Julia. *Journal of Open Source Software*, 5(52), 2020.  \doi{10.21105/joss.02520}.
+[^badia_2020] S. Badia and **F. Verdugo**. Gridap: An extensible Finite Element toolbox in Julia. *Journal of Open Source Software*, 5(52), 2020.  \doi{10.21105/joss.02520}.
 
-[^badia_2021] S. Badia, A.F. Martín, E. Neiva, and F. Verdugo. The aggregated unfitted finite element method on parallel tree-based adaptive meshes. *SIAM Journal on Scientific Computing*,  43: C203--C234, 2021. \doi{10.1137/20M1344512}.
+[^badia_2021] S. Badia, A.F. Martín, E. Neiva, and **F. Verdugo**. The aggregated unfitted finite element method on parallel tree-based adaptive meshes. *SIAM Journal on Scientific Computing*,  43: C203--C234, 2021. \doi{10.1137/20M1344512}.
 
 [^becker_2001] R. Becker and R. Rannacher.  An optimal control approach to a posteriori error estimation in finite element methods.  *Acta Numerica*, 10: 1--102, 2001. \doi{10.1017/S0962492901000010}.
 
@@ -793,7 +795,7 @@ estimation of the numerical error is achieved.*
 
 [^burman_2015] E. Burman, S. Claus, P. Hansbo, M.G. Larson, and A. Massing. CutFEM: Discretizing Geometry and Partial Differential Equations. *International Journal for Numerical Methods in Engineering*, 104(7): 472--501, 2015. \doi{10.1002/nme.4823}.
 
-[^casadei_2013] F. Casadei, P. Díez, and F. Verdugo. An algorithm for mesh refinement and un-refinement in fast transient dynamics.  *International Journal of Computational Methods*, 10(04): 1350018, 2013.  \doi{10.1142/S0219876213500187}.
+[^casadei_2013] F. Casadei, P. Díez, and **F. Verdugo**. An algorithm for mesh refinement and un-refinement in fast transient dynamics.  *International Journal of Computational Methods*, 10(04): 1350018, 2013.  \doi{10.1142/S0219876213500187}.
 
 [^cottrell_2009] J.A. Cottrell, T.J.R. Hughes, and Y.Bazilevs. *Isogeometric analysis: toward integration of CAD and FEA*. Wiley, 2009. \doi{10.1002/9780470749081.ch7}.
 
@@ -815,18 +817,19 @@ estimation of the numerical error is achieved.*
 
 [^verdugo_2012] F.~Verdugo and P. Díez. Computable bounds of functional outputs in linear visco-elastodynamics.  *Computer Methods in Applied Mechanics and Engineering*, 245–246: 313--330, 2012. \doi{10.1016/j.cma.2012.06.016}.
 
-[^verdugo_2013] F. Verdugo, N. Parés, and P. Díez. Modal-based goal-oriented error assessment for timeline-dependent quantities in transient dynamics. *Int. J. Numer. Meth. Engng.*, 95(8): 685--720, 2013. \doi{10.1002/nme.4538}.
+[^verdugo_2013] **F. Verdugo**, N. Parés, and P. Díez. Modal-based goal-oriented error assessment for timeline-dependent quantities in transient dynamics. *Int. J. Numer. Meth. Engng.*, 95(8): 685--720, 2013. \doi{10.1002/nme.4538}.
 
-[^verdugo_2014a] F. Verdugo, N. Parés, and P. Díez.  Goal-oriented space-time adaptivity for transient dynamics using a modal description of the adjoint solution. *Comput. Mech.*, 54(2): 331--352, 2014. \doi{10.1007/s00466-014-0988-2}.
+[^verdugo_2014a] **F. Verdugo**, N. Parés, and P. Díez.  Goal-oriented space-time adaptivity for transient dynamics using a modal description of the adjoint solution. *Comput. Mech.*, 54(2): 331--352, 2014. \doi{10.1007/s00466-014-0988-2}.
 
-[^verdugo_2014b] F. Verdugo, N. Parés, and P. Díez. Error Assessment in Structural Transient Dynamics.  *Archives of Computational Methods in Engineering*, 21(1): 59--90, 2014.  \doi{10.1007/s11831-014-9096-x}.
+[^verdugo_2014b] **F. Verdugo**, N. Parés, and P. Díez. Error Assessment in Structural Transient Dynamics.  *Archives of Computational Methods in Engineering*, 21(1): 59--90, 2014.  \doi{10.1007/s11831-014-9096-x}.
 
-[^verdugo_2016a] F. Verdugo and W.A. Wall. Unified computational framework for the efficient solution of n-field coupled problems with monolithic schemes. *Computer Methods in Applied Mechanics and Engineering*, 310: 335--366, 2016.  \doi{10.1016/j.cma.2016.07.016}.
+[^verdugo_2016a] **F. Verdugo** and W.A. Wall. Unified computational framework for the efficient solution of n-field coupled problems with monolithic schemes. *Computer Methods in Applied Mechanics and Engineering*, 310: 335--366, 2016.  \doi{10.1016/j.cma.2016.07.016}.
 
-[^verdugo_2016b] F. Verdugo, C.J. Roth, L. Yoshihara, and W.A. Wall. Efficient solvers for coupled models in respiratory mechanics. *International Journal for Numerical Methods in Biomedical Engineering*, 2016. \doi{10.1002/cnm.2795}.
+[^verdugo_2016b] **F. Verdugo**, C.J. Roth, L. Yoshihara, and W.A. Wall. Efficient solvers for coupled models in respiratory mechanics. *International Journal for Numerical Methods in Biomedical Engineering*, 2016. \doi{10.1002/cnm.2795}.
 
-[^verdugo_2019] F. Verdugo, A.F. Martín, and S. Badia.  Distributed-memory parallelization of the aggregated unfitted finite element method. *Computer Methods in Applied Mechanics and Engineering*, 357, 2019. \doi{10.1016/j.cma.2019.112583}.
+[^verdugo_2019] **F. Verdugo**, A.F. Martín, and S. Badia.  Distributed-memory parallelization of the aggregated unfitted finite element method. *Computer Methods in Applied Mechanics and Engineering*, 357, 2019. \doi{10.1016/j.cma.2019.112583}.
 
+@@
 
 
 

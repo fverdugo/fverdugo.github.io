@@ -345,8 +345,17 @@ code {
     width: 25%;
 }
 
-.im-100 {text-align: center;}
+.im-100 {
+ line-height: 130%;
+ font-size: 80%;
+ text-align: center;
+ }
 .im-100 img {
     padding: 0;
     width: 100%;
+}
+
+.bibrefs {
+ font-size: 80%;
+ line-height: 120%;
 }
