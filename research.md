@@ -18,8 +18,7 @@ objectives are:
 
 ### Research lines
 
-In order to address these global objectives, my current research agenda
-includes the following main research lines:
+In order to address these global objectives, my  main research lines are:
 
 -  **RL1:** Simplify mesh generation in large-scale parallel computations via
     embedded FE methods
@@ -28,8 +27,6 @@ includes the following main research lines:
     (the Gridap.jl project)
 
 #### RL1: Simplify mesh generation in large-scale parallel computations via embedded FE methods
-
-##### Research line description
 
 Mesh generation is known to be one of the main bottlenecks in real-world
 industrial FE simulations. Conventional FE methods require so-called
@@ -44,7 +41,7 @@ background Cartesian meshes that do not necessarily conform to the
 geometrical boundaries (see Figure 1). Generating such unfitted Cartesian
 grids is much simpler and more efficient that constructing body fitted
 meshes, specially in large parallel computations. One can use highly
-scalable octree-based mesh generators like the p4est package, which has
+scalable octree-based mesh generators like the [p4est](https://www.p4est.org/) package, which has
 shown excellent scaling properties up to thousands of hundreds of CPU
 cores.
 
@@ -91,7 +88,7 @@ techniques to couple CAD models and embedded simulations.
 
 ##### Results
 
-This research line has lead to several major research results detailed
+This research line has lead to several major research results, which are detailed
 as follows.
 
 ###### Multi-level domain decomposition for embedded finite element methods
@@ -112,7 +109,7 @@ larger computations. As a first approach, I have considered BDDC
 preconditioners to solve such problems at large scales. This choice is
 motivated by the fact that BDDC methods are among the most scalable
 preconditioners for FE analysis. In particular, the BDDC methods
-implemented in FEMPAR have shown an excellent weak scaling up to 458,752
+implemented in my research team have shown an excellent weak scaling up to 458,752
 cores and 30 billion unknowns [^badia_2016]. Unfortunately, conventional
 BDDC preconditioners loose they optimal qualities, when the underlying
 problem is discretized with an unfitted grid. Thus, available BDDC
@@ -125,9 +122,8 @@ BDDC solver, which makes it robust with respect to badly cut cells. The
 method has been shown to be algorithmically weak scalable for a wide
 range of 3D complex geometries. That is, the number of iterations needed
 to reach convergence in the preconditioned linear solver is
-asymptotically independent of the problem size (see Figure 2). This work has motivated the
-publication of 1 paper in a Q1 ranked journal (see reference
-[^badia_2017]), and has been presented in several conferences both at
+asymptotically independent of the problem size (see Figure 2). This work is
+published in [^badia_2017]) and has been presented in several conferences both at
 national and international level.
 
 @@im-100
@@ -149,7 +145,7 @@ The main drawback of this approach is that
 one relies on highly customized solvers, and therefore, it is not
 possible to take advantage of well known and established linear solvers
 for FE analysis available in renowned scientific computing packages as
-Trilinos or PETSc. In order to address this issue, I have considered a
+[Trilinos](https://trilinos.github.io/) or [PETSc](https://petsc.org/). In order to address this issue, I have considered a
 second approach. I have developed an enhanced FE formulation that leads
 to linear systems, whose condition number is not affected by small cuts
 (see Figure 3). Therefore, they can be solved with standard
@@ -166,10 +162,7 @@ to use in different problem types since it does not require to compute
 high order derivatives of the shape functions, and it does not introduce
 extra dissipation terms in the weak form. AgFEM has already been
 successfully applied to the solution of fluid [^badia_2018b] and heat
-transfer problems [^badia_2018a]. This work has lead to 2 publications
-in Q1 journals and several conference contributions at national and
-international level. Find in Figure 4 a flow simulation using the AgFEM
-method.
+transfer problems [^badia_2018a].
 
 @@im-100
 ![](/assets/fig3.png)
@@ -195,7 +188,7 @@ method.*
 
 ###### Extension of AgFEM to large-scale parallel computations.
 
-I have implemented a distributed-memory version of AgFEM in the FEMPAR
+I have implemented a distributed-memory version of AgFEM in the [FEMPAR](https://github.com/fempar/fempar)
 software project making use of MPI for inter-processor communications.
 The obtained results confirmed my expectations. When using AgFEM, the
 resulting systems of linear algebraic equations can be effectively
@@ -208,7 +201,7 @@ AMG solvers for body-fitted meshes is also recovered for AgFEM, i.e.
 number of linear solver iterations asymptotically independent of problem
 size. To my best knowledge, this is the first time that embedded methods
 are successfully applied to such large scales. These results have been
-published in a Q1 international journal (see reference [^verdugo_2019]).
+published in [^verdugo_2019].
 
 ###### Extension of AgFEM to adaptive computations.
 
@@ -241,8 +234,7 @@ meshes partitioned via space-filling curves. The proposed algorithms and
 data structures have been implemented within the FEMPAR scientific
 software library, using p4est as the forest-of-trees back-end. A strong
 scaling study reveals remarkable scalability up to 32.2K CPU cores and
-482.2M DOFs. This work has been recently published in the Q1 journal
-"SIAM Journal on Scientific Computing" (see reference [^badia_2019a] ).
+482.2M DOFs (see reference [^badia_2019a] ).
 
 In a second step, I have combined the parallel AgFEM implementation
 previously developed with this adaptive FE framework. The result is a
@@ -316,10 +308,8 @@ simulate relevant real-world cases.
 
 #### RL2: Software design of scientific applications and open-source projects
 
-##### Research line description
-
 I have recently started a new research line whose goal is to develop a
-new generation of open-source FE codes. The development of
+new generation of open-source FE codes since the development of
 high-performance scientific software for the numerical approximation of
 PDEs is a key research area with a broad impact in advanced scientific
 and engineering applications. Existing partial differential equation
@@ -331,7 +321,7 @@ interpreted languages like Python or MATLAB allow one to write scripts
 and applications in much less lines of code, boosting code productivity,
 but they lead to much slower programs. A trade-off between performance
 and productivity is usually achieved in scientific software libraries
-like FEniCS by combining an efficient C/C++ computational back-end with
+like [FEniCS](https://fenicsproject.org/) by combining an efficient C/C++ computational back-end with
 a user-friendly high-level Python user front-end. However, this approach
 is not satisfactory, when researchers need to extend these libraries
 with new features since they are forced to learn and modify a complex
@@ -341,13 +331,13 @@ problem*.
 
 
 Fortunately, recent advances in compiler technology are starting to
-revert this situation. In the field of scientific computing, Julia is a
+revert this situation. In the field of scientific computing, [Julia](https://julialang.org/) is a
 new computer language that combines the performance of compiled
 languages with the productivity of interpreted ones by using recent
 advances in compiler technology like type inference and just-in-time
 compilation. As a result, the same language can be used both for the
 back-end and the front-end, thus eliminating the two-language problem.
-Based on this novel paradigm, I have started the Gridap.jl project
+Based on this novel paradigm, I have started the [Gridap.jl project](https://github.com/gridap/Gridap.jl)
 [^badia_2020], a new generation, open-source, FE framework completely
 written in the Julia programming language. Gridap.jl allows users to
 write FE applications in a notation almost one-to-one to the
@@ -388,7 +378,8 @@ computing by serving as a fiscal sponsor for open source projects and
 organizing community-driven educational programs. Being an affiliated
 project, Gridap.jl is eligible to participate in NumFOCUS funding
 schemes and other events like the participation in the [Google Summer of
-Code](https://g.co/gsoc/) under the NumFOCUS umbrella.
+Code](https://g.co/gsoc/) under the NumFOCUS umbrella. In 2021, we participated
+with the projects ["Visualizing PDE approximations in Julia with Gridap.jl and Makie.jl"](https://summerofcode.withgoogle.com/archive/2021/projects/5637150787239936/) and ["A fast finite element interpolator in Gridap.jl"](https://summerofcode.withgoogle.com/archive/2021/projects/5162121666494464/).
 
 ##### Results
 
@@ -419,7 +410,8 @@ The Gridap.jl project is designed to be an extensible package ecosystem
 with several plugins that extend the functionality of the core
 repository. In particular, [GridapEmbedded.jl](https://github.com/gridap/GridapEmbedded.jl) is an extension that
 implements embedded FE methods. At this moment, it provides embedded
-methods based on classical ghost-penalty or methods based on AgFEM.
+methods based on classical ghost-penalty or methods based on AgFEM, being the only
+known open source package to provide both types of methods.
 GridapEmmbedded.jl will be the basis to implement the new space-time
 methods since it is implemented in a dimension-implemented fashion
 allowing to consider 4D meshes in the future.
@@ -514,7 +506,7 @@ an general computational framework based on monolithic AMG techniques.
 For comparison purposes, conventional AMG solvers were also included.
 The method was implemented in the high performance multi-physics code
 BACI and it was published in a Q1 journal (see reference
-[^verdugo_2016]). This framework has been used at TUM since then, and it
+[^verdugo_2016a]). This framework has been used at TUM since then, and it
 has been considered by several papers in top international journals
 (see, e.g., [^kremheller_2018][^fang_2018]), with a wide range of
 applications including simulation of vascular tumor growth and
@@ -530,7 +522,7 @@ thermo-mechanical coupling in rocket nozzles. I exemplary show here the
 performance of the developed preconditioners. The nozzle geometry (see
 Figures 7 and 8) and other problem parameters are
 inspired by the "Vulcain" rocket engine installed in the Ariane space
-launcher, see [^verdugo_2016] for further details.
+launcher, see [^verdugo_2016a] for further details.
 
 @@im-100
 ![](/assets/fig12.png)
@@ -650,6 +642,135 @@ respect to the number of processors (left), and the parallel speed up
 (right).*
 @@
 
+
+## Early-stage research at UPC (2009-2013)
+
+### PhD thesis overview
+
+My PhD thesis, entitled "Error assessment and adaptivity for structural
+transient dynamics", is devoted to the development of new automatic
+adaptive mesh refinement tools and goal-oriented error assessment
+techniques in the context of structural dynamics. Any FE based
+simulation has an intrinsic amount of error with respect to the exact
+solution of the selected physical model. Being aware of this error is of
+notorious importance if sensitive engineering decisions are taken on the
+basis of the numerical results. Assessing the error in elliptic problems
+(as structural statics) was a well known problem at the time of this PhD
+thesis. However, assessing the error in other more challenging problem
+types such as structural transient dynamics was an open research topic.
+In this context, most of the works provided *a posteriori* error
+estimates of the energy norm of the discretization error. The challenge
+was to develop so-called goal-oriented error estimates for this
+application. That is, *a posteriori* approximations of the error in a
+given quantity of interest of the underlying physical problem. This
+goal-oriented error estimation is specially well suited for real-world
+industrial applications since it provides information of the quality of
+the computed solution in the targeted quantities instead of a global
+function norm.
+
+The main contributions of the PhD thesis are 1) the introduction of a
+novel technique to compute bounds of the (unknown) discretization error
+in a given quantity of interest (see reference [^verdugo_2012]), 2) a
+goal-oriented space-time adaptive mesh refinement method specifically
+designed for efficiency in transient problems (see references
+[^casadei_2013][^verdugo_2014a]), and 3) a novel paradigm for error
+estimation in transient problems based on a new type of quantities of
+interest (see reference [^verdugo_2013]). I published a review paper
+with my main thesis results (see reference [^verdugo_2014b]) in the
+"Archives of Computational Methods in Engineering", which is the 1st
+ranked journal in the category "mathematics, interdisciplinary
+applications" of the Journal Citation Reports (JCR) in the year of
+publication. In the following, I briefly introduce items 2) and 3),
+which are the major thesis novelties.
+
+### Modal-based goal-oriented error assessment and adaptive mesh refinement
+
+Goal-oriented error estimation and adaptivity is particularly
+challenging in time-dependent problems. Assessing the error in the
+quantity of interest requires introducing an auxiliary problem, referred
+to as the adjoint or dual problem [^becker_2001]. The main difficulty is
+associated with the fact that the adjoint solution has to be solved
+backwards in time. This means that, in order to assess the error by
+weighting the residual of the direct (or forward) solution with the
+adjoint (or backward) solution, at least one of the two solutions have
+to be stored in the full time-space domain. In non-linear problems, the
+situation is even worse because the full forward problem has to be
+computed and stored to define the backwards adjoint. This means that
+assessing the error of each iteration of the forward problem potentially
+requires computing a different backward adjoint. The conventional
+approach to alleviate the storage requirements is to use
+*checkpointing*, where the forward solution is stored only at a small
+number of pre-selected time points. These stored snapshots are used as
+initial conditions on each sub-interval for recomputing the forward
+solution during the backwards adjoint computation. This approach
+mitigates the storage requirements, but for some applications,
+recomputing the forward solution repeatedly can be still too expensive.
+
+@@im-100
+![](/assets/fig17.png)
+
+*Figure 12: Simulation of elastic waves propagating in a perforated plate. The
+underlying space-time discretization has been automatically adapted
+using the goal-oriented error estimators in [^verdugo_2013]. A smaller
+number of mesh elements are required with the adapted meshes than with
+uniform discretizations in order to achieve the same level of accuracy.*
+@@
+
+
+In the thesis, I have proposed an alternative approach based on a well
+known technique for structural dynamics: modal analysis. The modal-based
+strategy is particularly well suited for computing the adjoint problem
+associated with some particular quantities of interest. Following this
+approach, the adjoint solution is computed and stored for each vibration
+mode instead of for each time step, which reduces the storage
+requirements enormously. Using this novel approach, one can compute
+efficiently local error indicators that for each element and time step
+in the chosen discretization. This information can be used to
+automatically increase the resolution of the space and time
+discretizations only in the regions, where it is actually needed,
+leading to efficient computations (see Figure 12).
+
+### A novel a-posteriori error estimation paradigm based on time-dependent quantities of interest
+
+Virtually all the literature on goal-oriented *a posteriori* error
+assessment is based on scalar quantities of interest. While this
+approach is well suited for steady-state problems, a single scalar value
+does not give enough pieces of information about a complex space-time
+solution. For this reason, the preferred quantities of interest in
+time-dependent problems are typically the history (or evolution) of the
+space average of the solution in a sub-region of the domain, which are
+referred to as time-line dependent quantities of interest
+[^verdugo_2013]. At the time of this PhD thesis, there was no error
+estimation method for this kind of quantities in the literature. One of
+the main thesis contributions is a new paradigm for *a posteriori* error
+estimation using this new type of quantities of interest.
+
+As already announced, in conventional goal-oriented error assessment in
+a given scalar quality, one needs to introduce and solve an adjoint
+problem. Dealing with time-line dependent quantities is much more
+challenging. A time-line dependent quantity can be understood as a
+family of infinite scalar quantities (one for each time point in the
+selected computation time interval). Thus, one needs the solution of a
+family of infinite adjoint problems. This is computationally
+un-affordable in practice. However, for a number of meaningful cases, I
+have mathematically proven in reference [^verdugo_2013] that all this
+adjoint problems are the equivalent after a translation of the time
+variable. This fundamental result is the crucial observation that allows
+one to assess the error in the time-line dependent quantities with an
+affordable cost. In addition, using a modal-based approximation of the
+adjoint problem allows one to accurately estimate the error in this new
+type of quantities in an efficient way (see Figure 13).
+
+@@im-100
+![](/assets/fig18.png)
+
+*Figure 13: Error estimation of a time-line dependent quantity of interest (in
+this case the time-evolution of the averaged displacement at region
+$\Gamma_g$). Note that by approximating the family of adjoint problems
+associated with this quantity using only 60 vibration modes, an accurate
+estimation of the numerical error is achieved.*
+@@
+
 ## References
 
 [^badia_2016] S. Badia, A.F. Martín, and J. Principe.  Multilevel Balancing Domain Decomposition at Extreme Scales. *SIAM Journal on Scientific Computing*, 38(1): C22--C52, 2016. \doi{10.1137/15M1013511}.
@@ -666,9 +787,13 @@ respect to the number of processors (left), and the parallel speed up
 
 [^badia_2021] S. Badia, A.F. Martín, E. Neiva, and F. Verdugo. The aggregated unfitted finite element method on parallel tree-based adaptive meshes. *SIAM Journal on Scientific Computing*,  43: C203--C234, 2021. \doi{10.1137/20M1344512}.
 
+[^becker_2001] R. Becker and R. Rannacher.  An optimal control approach to a posteriori error estimation in finite element methods.  *Acta Numerica*, 10: 1--102, 2001. \doi{10.1017/S0962492901000010}.
+
 [^briggs_2000] W.L. Briggs, V.E. Henson, and S.F. McCormick. *A Multigrid Tutorial, Second Edition*. Society for Industrial and Applied Mathematics, 2000. \doi{10.1137/1.9780898719505}.
 
 [^burman_2015] E. Burman, S. Claus, P. Hansbo, M.G. Larson, and A. Massing. CutFEM: Discretizing Geometry and Partial Differential Equations. *International Journal for Numerical Methods in Engineering*, 104(7): 472--501, 2015. \doi{10.1002/nme.4823}.
+
+[^casadei_2013] F. Casadei, P. Díez, and F. Verdugo. An algorithm for mesh refinement and un-refinement in fast transient dynamics.  *International Journal of Computational Methods*, 10(04): 1350018, 2013.  \doi{10.1142/S0219876213500187}.
 
 [^cottrell_2009] J.A. Cottrell, T.J.R. Hughes, and Y.Bazilevs. *Isogeometric analysis: toward integration of CAD and FEA*. Wiley, 2009. \doi{10.1002/9780470749081.ch7}.
 
@@ -688,7 +813,15 @@ respect to the number of processors (left), and the parallel speed up
 
 [^toselli_2005] A. Toselli and O. B. Widlund. *Domain Decomposition Methods — Algorithms and Theory*, volume 34 of *Springer Series in Computational Mathematics*. Springer Berlin Heidelberg, Berlin, Heidelberg, 2005. \doi{10.1007/b137868}.
 
-[^verdugo_2016] F. Verdugo and W.A. Wall. Unified computational framework for the efficient solution of n-field coupled problems with monolithic schemes. *Computer Methods in Applied Mechanics and Engineering*, 310: 335--366, 2016.  \doi{10.1016/j.cma.2016.07.016}.
+[^verdugo_2012] F.~Verdugo and P. Díez. Computable bounds of functional outputs in linear visco-elastodynamics.  *Computer Methods in Applied Mechanics and Engineering*, 245–246: 313--330, 2012. \doi{10.1016/j.cma.2012.06.016}.
+
+[^verdugo_2013] F. Verdugo, N. Parés, and P. Díez. Modal-based goal-oriented error assessment for timeline-dependent quantities in transient dynamics. *Int. J. Numer. Meth. Engng.*, 95(8): 685--720, 2013. \doi{10.1002/nme.4538}.
+
+[^verdugo_2014a] F. Verdugo, N. Parés, and P. Díez.  Goal-oriented space-time adaptivity for transient dynamics using a modal description of the adjoint solution. *Comput. Mech.*, 54(2): 331--352, 2014. \doi{10.1007/s00466-014-0988-2}.
+
+[^verdugo_2014b] F. Verdugo, N. Parés, and P. Díez. Error Assessment in Structural Transient Dynamics.  *Archives of Computational Methods in Engineering*, 21(1): 59--90, 2014.  \doi{10.1007/s11831-014-9096-x}.
+
+[^verdugo_2016a] F. Verdugo and W.A. Wall. Unified computational framework for the efficient solution of n-field coupled problems with monolithic schemes. *Computer Methods in Applied Mechanics and Engineering*, 310: 335--366, 2016.  \doi{10.1016/j.cma.2016.07.016}.
 
 [^verdugo_2016b] F. Verdugo, C.J. Roth, L. Yoshihara, and W.A. Wall. Efficient solvers for coupled models in respiratory mechanics. *International Journal for Numerical Methods in Biomedical Engineering*, 2016. \doi{10.1002/cnm.2795}.
 
@@ -705,16 +838,9 @@ respect to the number of processors (left), and the parallel speed up
 
 
 
-[^verdugo_2012] F.~Verdugo and P. Díez. Computable bounds of functional outputs in linear visco-elastodynamics.  *Computer Methods in Applied Mechanics and Engineering*, 245–246: 313--330, 2012. \doi{10.1016/j.cma.2012.06.016}.
 
-[^casadei_2013] F. Casadei, P. Díez, and F. Verdugo. An algorithm for mesh refinement and un-refinement in fast transient dynamics.  *International Journal of Computational Methods*, 10(04): 1350018, 2013.  \doi{10.1142/S0219876213500187}.
 
-[^verdugo_2014a] F. Verdugo, N. Parés, and P. Díez.  Goal-oriented space-time adaptivity for transient dynamics using a modal description of the adjoint solution. *Comput. Mech.*, 54(2): 331--352, 2014. \doi{10.1007/s00466-014-0988-2}.
 
-[^verdugo_2013] F. Verdugo, N. Parés, and P. Díez. Modal-based goal-oriented error assessment for timeline-dependent quantities in transient dynamics. *Int. J. Numer. Meth. Engng.*, 95(8): 685--720, 2013. \doi{10.1002/nme.4538}.
 
-[^verdugo_error_2014] F. Verdugo, N. Parés, and P. Díez. Error Assessment in Structural Transient Dynamics.  *Archives of Computational Methods in Engineering*, 21(1): 59--90, 2014.  \doi{10.1007/s11831-014-9096-x}.
-
-[^becker_2001] R. Becker and R. Rannacher.  An optimal control approach to a posteriori error estimation in finite element methods.  *Acta Numerica*, 10: 1--102, 2001. \doi{10.1017/S0962492901000010}.
 
 
