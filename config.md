@@ -1,3 +1,5 @@
+@def prepath = ""
+
 <!--
 Add here global page variables to use throughout your website.
 -->
