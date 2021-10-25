@@ -38,6 +38,12 @@ rss = "Curriculum vitae by Francesc Verdugo"
 - 2013: PhD Civil Engineer by [UPC](https://www.upc.edu/). Grade: excellent *cum laude* (maximum grade). ([See PhD thesis](https://upcommons.upc.edu/handle/2117/95642))
 - 2009: Bsc Msc Civil Engineer (ingeniero de caminos, canales y puertos) by [UPC](https://www.upc.edu/). ([See MSc thesis](https://upcommons.upc.edu/handle/2099.1/8679))
 
+### Programming skills
+
+- Programming languages: Julia ([see projects](/software/#projects_i_created)), Python, Fortran ([see projects](/software/#fempar)), C/C++ ([see projects](/software/#baci)), Matlab.
+- Parallel programming: [MPI](https://www.open-mpi.org/), [OpenMP](https://www.openmp.org/), [Julia multi-threading](https://docs.julialang.org/en/v1/manual/multi-threading/), [Julia Distributed](https://docs.julialang.org/en/v1/manual/distributed-computing/).
+- My Favourite text editor: [VIM](https://www.vim.org/).
+
 ## Fellowships and awards
 
 ### Competitive individual fellowships
