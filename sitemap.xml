@@ -14,13 +14,7 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://francescverdugo.com/menu1/index.html</loc>
-    <lastmod>2021-10-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://francescverdugo.com/menu2/index.html</loc>
+    <loc>https://francescverdugo.com/software/index.html</loc>
     <lastmod>2021-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -32,19 +26,7 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://francescverdugo.com/software/index.html</loc>
-    <lastmod>2021-10-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>https://francescverdugo.com/research/index.html</loc>
-    <lastmod>2021-10-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://francescverdugo.com/menu3/index.html</loc>
     <lastmod>2021-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
