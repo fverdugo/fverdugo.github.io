@@ -146,7 +146,6 @@ _Italics_ show the presenting author
 Even though I am not officially advising the following students, I am actively collaborating in the research of these other PhD thesis:
 
 1. Ongoing PhD thesis at Monash (supervised by Prof. Santiago Badia). Student: Hridya Dilip. Topic: Space-time embedded finite element methods.
-1. Ongoing PhD thesis at Monash (supervised by Prof. Santiago Badia). Student: Connor Mallon. Topic: Topology optimization leveraging neural networks.
 1. Ongoing PhD thesis at MIT (supervised by Prof Steven G. Johnson). Student: Wenji Yao. Topic: Topology optimization in photonics.
 
 ### Other mentoring activities
