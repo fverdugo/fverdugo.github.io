@@ -24,4 +24,3 @@ Add here global latex commands to use throughout your pages.
 \newcommand{\scal}[1]{\langle #1 \rangle}
 \newcommand{\doi}[1]{[DOI:#1](https://dx.doi.org/#1)}
 
-@def prepath="webpage"
