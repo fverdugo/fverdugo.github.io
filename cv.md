@@ -152,7 +152,7 @@ Even though I am not officially advising the following students, I am actively c
 
 1. Mentor in the Google Summer of Code (GSoC) 2021. Student: Pau Riera Portillo. Project: [[Gridap] Visualizing PDE approximations in Julia with Gridap.jl and Makie.jl.](https://summerofcode.withgoogle.com/projects/#6231266174697472)
 
-## Participaiton in competitive RTD projects
+## Participation in competitive RTD projects
 
 ### Participation as co-PI
 
