@@ -71,8 +71,8 @@ rss = "Curriculum vitae by Francesc Verdugo"
 
 #### Published or in press
 
-1. S. Badia, E. Neiva, **F. Verdugo** (2021). Linking ghost penalty and aggregated unfitted methods. *Computer Methods in Applied Mechanics and Engineering*. In press. [arXiv:2106.13728](https://arxiv.org/abs/2106.13728)
-1. L. Lu, R. Pestourie, W. Yao, Z. Wang, **F. Verdugo**, S.G. Johnson (2021). Physics-informed neural networks with hard constraints for inverse design. *SIAM Journal on Scientific Computing*. In press. [arXiv:2102.04626](https://arxiv.org/abs/2102.04626)
+1. S. Badia, E. Neiva, **F. Verdugo** (2022). Linking ghost penalty and aggregated unfitted methods. *Computer Methods in Applied Mechanics and Engineering*, vol. 388, pp. 114232. [DOI:10.1016/j.cma.2021.114232](https://doi.org/10.1016/j.cma.2021.114232) [arXiv:2106.13728](https://arxiv.org/abs/2106.13728)
+1. L. Lu, R. Pestourie, W. Yao, Z. Wang, **F. Verdugo**, S.G. Johnson (2021). Physics-informed neural networks with hard constraints for inverse design. *SIAM Journal on Scientific Computing*, vol. 43, pp. B1105–B1132. [DOI:10.1137/21M1397908](https://doi.org/10.1137/21M1397908) [arXiv:2102.04626](https://arxiv.org/abs/2102.04626)
 1. S. Badia, A.F. Martín, E. Neiva, and **F. Verdugo** (2021). The aggregated unfitted finite element method on parallel tree-based adaptive meshes. *SIAM Journal on Scientific Computing*, vol. 43, pp. C203--C234.  [DOI:10.1137/20M1344512](https://dx.doi.org/10.1137/20M1344512)  [arXiv:2006.05373](https://arxiv.org/abs/2006.05373)
 1. S. Badia, A.F. Martín, E. Neiva, and **F. Verdugo** (2020). A generic finite element framework on parallel tree-based adaptive meshes. *SIAM Journal on Scientific Computing*, vol. 42, pp. C436--C468.  [DOI:10.1137/20M1328786](https://dx.doi.org/10.1137/20M1328786) [arXiv:1907.03709](https://arxiv.org/abs/1907.03709)
 1. S. Badia and **F. Verdugo** (2020). Gridap: An extensible Finite Element toolbox in Julia *Journal of Open Source Software*, vol. 5(52), pp. 2520. [DOI:10.21105/joss.02520](https://dx.doi.org/10.21105/joss.02520)
