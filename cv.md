@@ -1,11 +1,12 @@
 +++
 title = "Curriculum vitae"
 hascode = false
-date = Date(2021,10,12)
+date = Date(2021,11,29)
 rss = "Curriculum vitae by Francesc Verdugo"
 +++
 
 # Curriculum vitae
+*Last update: 2021-11-29*
 
 \toc
 
@@ -66,6 +67,7 @@ rss = "Curriculum vitae by Francesc Verdugo"
 
 #### Preprints
 
+1. W. Yao, **F. Verdugo**, R.E. Christiansen, S.G. Johnson. Trace formulation for photonic inverse design with incoherent sources. [arXiv:2111.13046](https://arxiv.org/abs/2111.13046)
 1. S. Badia, P.A. Martorell, **F. Verdugo**. Geometrical discretisations for unfitted finite elements on explicit boundary representations. [arXiv:2110.01378](https://arxiv.org/abs/2110.01378)
 1. **F. Verdugo** and S. Badia. The software design of Gridap: a Finite Element package based on the Julia JIT compiler. [arXiv:2109.12818](https://arxiv.org/abs/2109.12818)
 
