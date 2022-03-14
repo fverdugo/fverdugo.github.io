@@ -1,12 +1,12 @@
 +++
 title = "Curriculum vitae"
 hascode = false
-date = Date(2021,11,29)
+date = Date(2022,03,14)
 rss = "Curriculum vitae by Francesc Verdugo"
 +++
 
 # Curriculum vitae
-*Last update: 2021-11-29*
+*Last update: 2022-03-14*
 
 \toc
 
@@ -67,12 +67,13 @@ rss = "Curriculum vitae by Francesc Verdugo"
 
 #### Preprints
 
+1. S. Badia, E. Neiva, **F. Verdugo**. Robust high-order unfitted finite elements by interpolation-based discrete extension. [arXiv:2201.06632](https://arxiv.org/abs/2201.06632)
 1. W. Yao, **F. Verdugo**, R.E. Christiansen, S.G. Johnson. Trace formulation for photonic inverse design with incoherent sources. [arXiv:2111.13046](https://arxiv.org/abs/2111.13046)
 1. S. Badia, P.A. Martorell, **F. Verdugo**. Geometrical discretisations for unfitted finite elements on explicit boundary representations. [arXiv:2110.01378](https://arxiv.org/abs/2110.01378)
-1. **F. Verdugo** and S. Badia. The software design of Gridap: a Finite Element package based on the Julia JIT compiler. [arXiv:2109.12818](https://arxiv.org/abs/2109.12818)
 
 #### Published or in press
 
+1. **F. Verdugo** and S. Badia (2022). The software design of Gridap: a Finite Element package based on the Julia JIT compiler. *Computer Physics Communications*, in press (accepted for publication on 2022-03-11). [arXiv:2109.12818](https://arxiv.org/abs/2109.12818)
 1. S. Badia, E. Neiva, **F. Verdugo** (2022). Linking ghost penalty and aggregated unfitted methods. *Computer Methods in Applied Mechanics and Engineering*, vol. 388, pp. 114232. [DOI:10.1016/j.cma.2021.114232](https://doi.org/10.1016/j.cma.2021.114232) [arXiv:2106.13728](https://arxiv.org/abs/2106.13728)
 1. L. Lu, R. Pestourie, W. Yao, Z. Wang, **F. Verdugo**, S.G. Johnson (2021). Physics-informed neural networks with hard constraints for inverse design. *SIAM Journal on Scientific Computing*, vol. 43, pp. B1105–B1132. [DOI:10.1137/21M1397908](https://doi.org/10.1137/21M1397908) [arXiv:2102.04626](https://arxiv.org/abs/2102.04626)
 1. S. Badia, A.F. Martín, E. Neiva, and **F. Verdugo** (2021). The aggregated unfitted finite element method on parallel tree-based adaptive meshes. *SIAM Journal on Scientific Computing*, vol. 43, pp. C203--C234.  [DOI:10.1137/20M1344512](https://dx.doi.org/10.1137/20M1344512)  [arXiv:2006.05373](https://arxiv.org/abs/2006.05373)
