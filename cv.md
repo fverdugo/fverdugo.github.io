@@ -1,12 +1,12 @@
 +++
 title = "Curriculum vitae"
 hascode = false
-date = Date(2022,03,14)
+date = Date(2022,04,04)
 rss = "Curriculum vitae by Francesc Verdugo"
 +++
 
 # Curriculum vitae
-*Last update: 2022-03-14*
+*Last update: 2022-04-04*
 
 \toc
 
@@ -21,9 +21,13 @@ rss = "Curriculum vitae by Francesc Verdugo"
 - ORCID: [0000-0003-3667-443X](http://orcid.org/0000-0003-3667-443X)
 - Research ID: N-1674-2016
 
+### Forthcoming position
+
+- 2022-08-01: Assistant Professor at the Computer Science Department of [VU Amsterdam](https://vu.nl/).
+
 ### Current position
 
-- 2020-01-01 -- present: Assistant Research Professor at [CIMNE](https://www.cimne.com/). ([See research](/research/#post-doctoral_research_at_cimne_2016-present))
+- 2020-01-01 -- 2022-05-31: Assistant Research Professor at [CIMNE](https://www.cimne.com/). ([See research](/research/#post-doctoral_research_at_cimne_2016-present))
 
 ### Previous positions
 
@@ -34,10 +38,13 @@ rss = "Curriculum vitae by Francesc Verdugo"
 
 ### Academic degrees
 
-- 2018: Habilitation for university assistant professor by [AQU](https://www.aqu.cat/).
-- 2015: Habilitation for university lecturer by [AQU](https://www.aqu.cat/).
 - 2013: PhD Civil Engineer by [UPC](https://www.upc.edu/). Grade: excellent *cum laude* (maximum grade). ([See PhD thesis](https://upcommons.upc.edu/handle/2117/95642))
 - 2009: Bsc Msc Civil Engineer (ingeniero de caminos, canales y puertos) by [UPC](https://www.upc.edu/). ([See MSc thesis](https://upcommons.upc.edu/handle/2099.1/8679))
+
+### Abilitations
+
+- 2018: Abilitation for university assistant professor by [AQU](https://www.aqu.cat/).
+- 2015: Abilitation for university lecturer by [AQU](https://www.aqu.cat/).
 
 ### Programming skills
 
@@ -69,11 +76,11 @@ rss = "Curriculum vitae by Francesc Verdugo"
 
 1. S. Badia, E. Neiva, **F. Verdugo**. Robust high-order unfitted finite elements by interpolation-based discrete extension. [arXiv:2201.06632](https://arxiv.org/abs/2201.06632)
 1. W. Yao, **F. Verdugo**, R.E. Christiansen, S.G. Johnson. Trace formulation for photonic inverse design with incoherent sources. [arXiv:2111.13046](https://arxiv.org/abs/2111.13046)
-1. S. Badia, P.A. Martorell, **F. Verdugo**. Geometrical discretisations for unfitted finite elements on explicit boundary representations. [arXiv:2110.01378](https://arxiv.org/abs/2110.01378)
 
 #### Published or in press
 
-1. **F. Verdugo** and S. Badia (2022). The software design of Gridap: a Finite Element package based on the Julia JIT compiler. *Computer Physics Communications*, in press (accepted for publication on 2022-03-11). [arXiv:2109.12818](https://arxiv.org/abs/2109.12818)
+1. S. Badia, P.A. Martorell, **F. Verdugo** (2022). Geometrical discretisations for unfitted finite elements on explicit boundary representations. *Journal of Computational Physics*, vol 460, pp. 111162. [DOI:10.1016/j.jcp.2022.111162](https://doi.org/10.1016/j.jcp.2022.111162) [arXiv:2110.01378](https://arxiv.org/abs/2110.01378)
+1. **F. Verdugo** and S. Badia (2022). The software design of Gridap: a Finite Element package based on the Julia JIT compiler. *Computer Physics Communications*, vol. 276, pp. 108341. [DOI:10.1016/j.cpc.2022.108341](https://doi.org/10.1016/j.cpc.2022.108341) [arXiv:2109.12818](https://arxiv.org/abs/2109.12818)
 1. S. Badia, E. Neiva, **F. Verdugo** (2022). Linking ghost penalty and aggregated unfitted methods. *Computer Methods in Applied Mechanics and Engineering*, vol. 388, pp. 114232. [DOI:10.1016/j.cma.2021.114232](https://doi.org/10.1016/j.cma.2021.114232) [arXiv:2106.13728](https://arxiv.org/abs/2106.13728)
 1. L. Lu, R. Pestourie, W. Yao, Z. Wang, **F. Verdugo**, S.G. Johnson (2021). Physics-informed neural networks with hard constraints for inverse design. *SIAM Journal on Scientific Computing*, vol. 43, pp. B1105–B1132. [DOI:10.1137/21M1397908](https://doi.org/10.1137/21M1397908) [arXiv:2102.04626](https://arxiv.org/abs/2102.04626)
 1. S. Badia, A.F. Martín, E. Neiva, and **F. Verdugo** (2021). The aggregated unfitted finite element method on parallel tree-based adaptive meshes. *SIAM Journal on Scientific Computing*, vol. 43, pp. C203--C234.  [DOI:10.1137/20M1344512](https://dx.doi.org/10.1137/20M1344512)  [arXiv:2006.05373](https://arxiv.org/abs/2006.05373)
@@ -100,6 +107,7 @@ rss = "Curriculum vitae by Francesc Verdugo"
 
 _Italics_ show the presenting author
 
+1. _M. Benzaouia_, W. Yao, A. Cerjan, Z. Lin, C. Roques-Carmes, **F. Verdugo**, R.E. Christiansen, S.G. Johnson. Foundations of lasing and emission from surface-patterned structures. Active Photonic Platforms XIII. August 2021.
 1. **_F. Verdugo_**, _E. Neiva_, _O. Colomes_, S. Badia. New tools to solve PDEs in Julia with Gridap.jl. JuliaCon 2021. Online event. July 2021.
 1. _P. Martorell_, S. Badia, **F. Verdugo**. From STLs to embedded integration meshes via robust polyhedra clipping. (**invited session**), 9th edition of the International Conference on Computational Methods for Coupled Problems in Science and Engineering (COUPLED PROBLEMS 2021) , Online event, June 2021.
 1. _E. Neiva_, S. Badia, **F. Verdugo**. High-order unfitted finite elements with aggregation by interpolation. (**invited session**), 9th edition of the International Conference on Computational Methods for Coupled Problems in Science and Engineering (COUPLED PROBLEMS 2021) , Online event, June 2021.
@@ -189,6 +197,7 @@ Even though I am not officially advising the following students, I am actively c
 
 ### Organization of R&D activities
 
+1. Co-organizer of the mini-symposium *Recent Advances in Immersed Bboundary and Fictitious domain methods*, on the 8th European Congress on Computational Methods in Applied Sciences and Engineering, Oslo, Norway, 5-9 June 2022.
 1. Co-organizer of the mini-symposium *Advanced Discretization and Solution Techniques for Unfitted Finite Elements in Coupled Problems*, on the IX International Conference on Coupled Problems in Science and Engineering (online event), June 2021.
 1. Co-organizer of the mini-symposium *Unfitted discretization methods: From theory to multidisciplinary applications* on the Congress on Numerical Methods in Engineering (CMN2019), Gimaraes, Portugal, July 2019. 
 1. Co-organizer of the mini-symposium *Advanced Discretization and Solution Techniques for Unfitted Finite Elements in Coupled Problems*, on the VIII International Conference on Coupled Problems in Science and Engineering, Sitges, Spain, June 2019.
