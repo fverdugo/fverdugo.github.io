@@ -6,7 +6,7 @@ rss = "Curriculum vitae by Francesc Verdugo"
 +++
 
 # Curriculum vitae
-*Last update: 2022-04-04*
+*Last update: 2022-06-09*
 
 \toc
 
@@ -23,14 +23,11 @@ rss = "Curriculum vitae by Francesc Verdugo"
 
 ### Forthcoming position
 
-- 2022-08-01: Assistant Professor at the Computer Science Department of [VU Amsterdam](https://vu.nl/).
-
-### Current position
-
-- 2020-01-01 -- 2022-05-31: Assistant Research Professor at [CIMNE](https://www.cimne.com/). ([See research](/research/#post-doctoral_research_at_cimne_2016-present))
+- 2022-08-01: Assistant Professor at the Computer Science Department at [VU Amsterdam](https://vu.nl/).
 
 ### Previous positions
 
+- 2020-01-01 -- 2022-05-31: Assistant Research Professor at [CIMNE](https://www.cimne.com/). ([See research](/research/#post-doctoral_research_at_cimne_2016-present))
 - 2018-01-01 -- 2019-12-31: Postdoc researcher at [CIMNE](https://www.cimne.com/). ([See research](/research/#post-doctoral_research_at_cimne_2016-present))
 - 2016-01-01 -- 2017-12-31: Postdoc researcher at [UPC](https://www.upc.edu/). ([See research](/research/#post-doctoral_research_at_cimne_2016-present))
 - 2013-12-01 -- 2015-11-30: Postdoc researcher at [TUM](https://www.tum.de).  ([See research](/research/#post-doctoral_research_at_tum_2013-2015))
@@ -74,6 +71,7 @@ rss = "Curriculum vitae by Francesc Verdugo"
 
 #### Preprints
 
+1. S.Badia, H. Dilip, **F. Verdugo**. Space-time aggregated finite element methods for time-dependent problems on moving domains. [arXiv:2206.03626](https://arxiv.org/abs/2206.03626)
 1. S. Badia, E. Neiva, **F. Verdugo**. Robust high-order unfitted finite elements by interpolation-based discrete extension. [arXiv:2201.06632](https://arxiv.org/abs/2201.06632)
 1. W. Yao, **F. Verdugo**, R.E. Christiansen, S.G. Johnson. Trace formulation for photonic inverse design with incoherent sources. [arXiv:2111.13046](https://arxiv.org/abs/2111.13046)
 
@@ -107,6 +105,7 @@ rss = "Curriculum vitae by Francesc Verdugo"
 
 _Italics_ show the presenting author
 
+1. _O. Colomés_, **F. Verdugo**, S. van Hoof. A monolithic Finite Element formulation for the hydroelastic analysis of Very Large Floating Structures. The 8th European Congress on Computational Methods in Applied Sciences and Engineering. 5-9 June 2022, Oslo, Norway.
 1. _M. Benzaouia_, W. Yao, A. Cerjan, Z. Lin, C. Roques-Carmes, **F. Verdugo**, R.E. Christiansen, S.G. Johnson. Foundations of lasing and emission from surface-patterned structures. Active Photonic Platforms XIII. August 2021.
 1. **_F. Verdugo_**, _E. Neiva_, _O. Colomes_, S. Badia. New tools to solve PDEs in Julia with Gridap.jl. JuliaCon 2021. Online event. July 2021.
 1. _P. Martorell_, S. Badia, **F. Verdugo**. From STLs to embedded integration meshes via robust polyhedra clipping. (**invited session**), 9th edition of the International Conference on Computational Methods for Coupled Problems in Science and Engineering (COUPLED PROBLEMS 2021) , Online event, June 2021.
