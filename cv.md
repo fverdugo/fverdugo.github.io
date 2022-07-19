@@ -21,7 +21,7 @@ rss = "Curriculum vitae by Francesc Verdugo"
 - ORCID: [0000-0003-3667-443X](http://orcid.org/0000-0003-3667-443X)
 - Research ID: N-1674-2016
 
-### Forthcoming position
+### Current position
 
 - 2022-08-01: Assistant Professor at the Computer Science Department at [VU Amsterdam](https://vu.nl/).
 
