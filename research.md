@@ -2,7 +2,13 @@
 
 \toc
 
-## Post-doctoral research at CIMNE (2016-present)
+## Research at VU Amsterdam (2022-present)
+
+I have recently started as Assistant Professor at the Department of
+Computer Science at [VU Amsterdam](https://www.vu.nl). I will populate this section soon.
+For the moment, see my research at my previous position at CIMNE (2016-2022).
+
+## Post-doctoral research at CIMNE (2016-2022)
 
 ### Objectives
 

@@ -1,12 +1,12 @@
 +++
 title = "Curriculum vitae"
 hascode = false
-date = Date(2022,04,04)
+date = Date(2022,08,01)
 rss = "Curriculum vitae by Francesc Verdugo"
 +++
 
 # Curriculum vitae
-*Last update: 2022-06-09*
+*Last update: 2022-08-01*
 
 \toc
 
@@ -71,6 +71,7 @@ rss = "Curriculum vitae by Francesc Verdugo"
 
 #### Preprints
 
+1. W. Yao, **F. Verdugo**, H.O. Everitt, R.E. Christiansen, S.G. Johnson. Designing Structures that Maximize Spatially Averaged Surface-Enhanced Raman Spectra. [arXiv:2208.00960](https://arxiv.org/abs/2208.00960)
 1. S.Badia, H. Dilip, **F. Verdugo**. Space-time aggregated finite element methods for time-dependent problems on moving domains. [arXiv:2206.03626](https://arxiv.org/abs/2206.03626)
 1. S. Badia, E. Neiva, **F. Verdugo**. Robust high-order unfitted finite elements by interpolation-based discrete extension. [arXiv:2201.06632](https://arxiv.org/abs/2201.06632)
 1. W. Yao, **F. Verdugo**, R.E. Christiansen, S.G. Johnson. Trace formulation for photonic inverse design with incoherent sources. [arXiv:2111.13046](https://arxiv.org/abs/2111.13046)
@@ -78,6 +79,7 @@ rss = "Curriculum vitae by Francesc Verdugo"
 #### Published or in press
 
 1. S. Badia, P.A. Martorell, **F. Verdugo** (2022). Geometrical discretisations for unfitted finite elements on explicit boundary representations. *Journal of Computational Physics*, vol 460, pp. 111162. [DOI:10.1016/j.jcp.2022.111162](https://doi.org/10.1016/j.jcp.2022.111162) [arXiv:2110.01378](https://arxiv.org/abs/2110.01378)
+1. S. Badia, A.F. Martín, and **F Verdugo** (2022). GridapDistributed: a massively parallel finite element toolbox in Julia. *Journal of Open Source Software*, vol 7(74), pp. 4157. [DOI:10.21105/joss.04157](https://doi.org/10.21105/joss.04157)
 1. **F. Verdugo** and S. Badia (2022). The software design of Gridap: a Finite Element package based on the Julia JIT compiler. *Computer Physics Communications*, vol. 276, pp. 108341. [DOI:10.1016/j.cpc.2022.108341](https://doi.org/10.1016/j.cpc.2022.108341) [arXiv:2109.12818](https://arxiv.org/abs/2109.12818)
 1. S. Badia, E. Neiva, **F. Verdugo** (2022). Linking ghost penalty and aggregated unfitted methods. *Computer Methods in Applied Mechanics and Engineering*, vol. 388, pp. 114232. [DOI:10.1016/j.cma.2021.114232](https://doi.org/10.1016/j.cma.2021.114232) [arXiv:2106.13728](https://arxiv.org/abs/2106.13728)
 1. L. Lu, R. Pestourie, W. Yao, Z. Wang, **F. Verdugo**, S.G. Johnson (2021). Physics-informed neural networks with hard constraints for inverse design. *SIAM Journal on Scientific Computing*, vol. 43, pp. B1105–B1132. [DOI:10.1137/21M1397908](https://doi.org/10.1137/21M1397908) [arXiv:2102.04626](https://arxiv.org/abs/2102.04626)
@@ -105,6 +107,7 @@ rss = "Curriculum vitae by Francesc Verdugo"
 
 _Italics_ show the presenting author
 
+1. **_F. Verdugo_**, A.F. Martín.  HPC sparse linear algebra in Julia with PartitionedArrays.jl. JuliaCon 2022. Online event. July 2022.
 1. _O. Colomés_, **F. Verdugo**, S. van Hoof. A monolithic Finite Element formulation for the hydroelastic analysis of Very Large Floating Structures. The 8th European Congress on Computational Methods in Applied Sciences and Engineering. 5-9 June 2022, Oslo, Norway.
 1. _M. Benzaouia_, W. Yao, A. Cerjan, Z. Lin, C. Roques-Carmes, **F. Verdugo**, R.E. Christiansen, S.G. Johnson. Foundations of lasing and emission from surface-patterned structures. Active Photonic Platforms XIII. August 2021.
 1. **_F. Verdugo_**, _E. Neiva_, _O. Colomes_, S. Badia. New tools to solve PDEs in Julia with Gridap.jl. JuliaCon 2021. Online event. July 2021.
