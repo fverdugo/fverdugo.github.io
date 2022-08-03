@@ -2,7 +2,7 @@
 
  My institutional email is
 ```
-fverdugo (at) cimne (dot) upc (dot) edu
+f (dot) verdugo (dot) rojano (at) vu (dot) nl
 ```
 
 You can also contact me via my social-media profiles.
